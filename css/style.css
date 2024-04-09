@@ -1,17 +1,8 @@
-/* Custom CSS to style the navigation */
-.nav-container {
-    background-color: #007bff; /* Blue background color */
-    width: 100%; /* Full-width */
-}
 .custom-nav {
-    width: 70%;
-    margin: 0 auto; /* Center align the navigation */
+width: 70%;
+margin: 0 auto; /* Center align the navigation */
 }
-/* Custom CSS to style the footer */
-.footer-container {
-width: 100%; /* Full-width */
-padding: 20px 0; /* Add some padding for spacing */
-}
+
 .custom-footer {
 width: 70%;
 margin: 0 auto; /* Center align the content */
