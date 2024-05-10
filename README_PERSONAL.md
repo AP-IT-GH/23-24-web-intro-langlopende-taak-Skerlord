@@ -1,7 +1,7 @@
 ### To do lijst af te handelen voor 12-05-2024 
 
-- Tag <header> toevoegen bij elke pagina op juiste locatie!
-- Bestaande diensten-pagina's aanpassen met een <main> & <aside> (bv. om een menu in te laten zien met andere dienstenpagina's...)
+- Tag header toevoegen bij elke pagina op juiste locatie!
+- Bestaande diensten-pagina's aanpassen met een main & aside (bv. om een menu in te laten zien met andere dienstenpagina's...)
 - Diensten pagina's verder uitwerken
     - antivirus.html
     - webbrowsers.html
