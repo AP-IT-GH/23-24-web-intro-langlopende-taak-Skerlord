@@ -30,6 +30,6 @@ loginForm.addEventListener("submit", (e) => {
 	  .catch(err => console.error(err));
 	  }
 	  
-	fetch(https://www.virustotal.com/api/v3/analyses/
+	fetch('https://www.virustotal.com/api/v3/analyses/')
 });
 
