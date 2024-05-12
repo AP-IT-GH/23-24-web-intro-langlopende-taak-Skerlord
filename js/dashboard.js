@@ -36,10 +36,10 @@ fetchDataForYear(year)
                 labels: xValues,
                 datasets: [{
                     label: '# Vulnerabilites / maand in 2023',
-                    backgroundColor: "rgba(0,0,255,1.0)",
-                    borderColor: "rgba(0,0,255,0.1)",
+                    backgroundColor: "rgba(152, 193, 217)",
+                    borderColor: "rgba(61, 90, 128)",
                     data: yValues,
-                    fill: false
+                    fill: true
                 }]
             },
             options: {

@@ -1,77 +1,88 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <!-- stylesheet eigen geschreven css -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- stylesheet reset css -->
-    <link href="./css/reset.css" rel="stylesheet">
 
-    <!-- Titel van de website! -->
-    <title>Sekwoeritie</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <!-- stylesheet eigen geschreven css -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- stylesheet reset css -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <!-- svg icon as Favicon in browser! :) -->
+  <link rel="icon" href="./assets/Sekwoerity.svg">
+  <!-- Titel van de website! -->
+  <title>Sekwoeritie</title>
 
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <nav class="navbar navbar-expand-md custom-primary navbar-dark">
     <section class="container-md">
-    <!-- Logo toevoegen + alt-text invullen -->
-    <a class="navbar-brand mr-auto" href="./index.html">
-    <img class="d-inline-block align-middle" src="./assets/Sekwoerity.svg" width="35" height="35" alt="Logo Sekwoeritie">
-    </a> 
-    <!-- Wanneer breakpoint wordt getriggerd -> maak burger menu. -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Logo toevoegen + alt-text invullen -->
+      <a class="navbar-brand mr-auto" href="./index.html">
+        <img class="d-inline-block align-middle" src="./assets/Sekwoerity.svg" width="35" height="35"
+          alt="Logo Sekwoeritie">
+      </a>
+      <!-- Wanneer breakpoint wordt getriggerd -> maak burger menu. -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <container class="collapse navbar-collapse" id="navbarSupportedContent">
-    <!-- Unordered list -->
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Diensten
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./diensten.html">Diensten</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="./antivirus.html">Antivirus</a>
-            <a class="dropdown-item" href="./domeinmonitoring.html">Domeinmonitoring</a>
-            <a class="dropdown-item" href="./emailfiltering.html">E-mailfiltering</a>
-            <a class="dropdown-item" href="./mfa.html">Multifactor Authenticatie</a>
-            <a class="dropdown-item" href="./phishingsimulatie.html">Phishingsimulatie</a>
-            <a class="dropdown-item" href="./webbrowsers.html">Webbrowsers</a>
-            
-          </div>
-        </li>
+      <container class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Unordered list -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Diensten
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./diensten.html">Diensten</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./antivirus.html">Antivirus</a>
+              <a class="dropdown-item" href="./domeinmonitoring.html">Domeinmonitoring</a>
+              <a class="dropdown-item" href="./emailfiltering.html">E-mailfiltering</a>
+              <a class="dropdown-item" href="./mfa.html">Multifactor Authenticatie</a>
+              <a class="dropdown-item" href="./phishingsimulatie.html">Phishingsimulatie</a>
+              <a class="dropdown-item" href="./webbrowsers.html">Webbrowsers</a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
-    </ul>
-    <ul class="navbar-nav d-flex flex-row ms-auto">
-      <!-- Icons -->
-      <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="https://facebook.com">
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex flex-row ms-auto">
+          <!-- Icons -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://facebook.com" target="_blank">
               <i class="bi bi-facebook text-white"></i>
-          </a>
-      </li>
-      <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="https://twitter.com">
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://twitter.com" target="_blank">
               <i class="bi bi-twitter text-white"></i>
-          </a>
-      </li>
-    </container>
+            </a>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm custom-button-secondary" type="submit">zoeken</button>
+          </form>
+      </container>
     </section>
   </nav>
   <!-- Main van deze pagina bevat: 
@@ -87,15 +98,20 @@
     <!-- Hero -->
     <section class="row p-4 pb-0 pe-lg-0 pt-lg-5 rounded-3 border shadow-lg mx-1">
       <article class="col-lg-8 p-3 p-lg-5 pt-lg-3">
-          <h2 class="">Ontdek de digitale frontlinie</h2>
-          <p class="lead">In de bruisende digitale wereld vol kansen en uitdagingen staat één team onverschrokken tussen bedrijven en de duistere krachten van cybercriminaliteit: Sekwoeritie, jouw vertrouwde partner in phishing en security.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"><a class="link-light link-underline-opacity-0" href="#verhaal">Ons verhaal</a></button>
-            <button type="button" class="btn btn-outline-secondary btn-lg px-4"><a class="link-dark link-underline-opacity-0" href="./Diensten.html">Diensten</a></button>
-          </div>
+        <h2 class="">Ontdek de digitale frontlinie</h2>
+        <p class="lead">In de bruisende digitale wereld vol kansen en uitdagingen staat één team onverschrokken tussen
+          bedrijven en de duistere krachten van cybercriminaliteit: Sekwoeritie, jouw vertrouwde partner in phishing en
+          security.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <button type="button" class="btn custom-button-primary btn-lg px-4 me-md-2 fw-bold"><a
+              class="link-light link-underline-opacity-0" href="#verhaal">Ons verhaal</a></button>
+          <button type="button" class="btn btn-secondary btn-lg px-4 fw-bold"><a
+              class="link-light link-underline-opacity-0" href="./Diensten.html">Diensten</a></button>
+        </div>
       </article>
       <figure class="col-lg-4 p-0 overflow-hidden ">
-            <img class="img-fluid" src="./assets/sekwoeritie-hero.png" alt="" width="80%">
+        <img class="img-fluid" src="./assets/sekwoeritie-hero.png"
+          alt="Banner voor hoofdpagina sekwoeritie: man die aan pc zit" width="80%">
       </figure>
     </section>
     <!-- Introductie -->
@@ -105,10 +121,21 @@
       </figure>
       <article class="col-md-8 offset-md-1">
         <h2>Sekwoeritie, jouw security partner!</h2>
-        <p>In de snel evoluerende digitale wereld is cybersecurity meer dan ooit een cruciale factor voor het succes en de veiligheid van bedrijven. Bij Sekwoeritie begrijpen we deze uitdagingen als geen ander. Als jouw toegewijde partner in phishingpreventie en securityoplossingen staan we klaar om jouw bedrijf te beschermen tegen de groeiende dreigingen van cybercriminaliteit.</p>
-        <p>Met ons team van ervaren experts bieden we een uitgebreid scala aan diensten, variërend van geavanceerde phishing-detectie tot proactieve securitystrategieën en uitgebreide gebruikerstrainingen. Onze missie is simpel maar krachtig: het creëren van een veiligere digitale omgeving waarin jouw bedrijf kan gedijen zonder zich zorgen te hoeven maken over cyberaanvallen.</p>
-        <p>Bij Sekwoeritie geloven we in een persoonlijke aanpak. We luisteren naar jouw specifieke behoeften en bieden op maat gemaakte oplossingen die aansluiten bij de unieke uitdagingen van jouw organisatie. Of je nu een klein bedrijf bent dat zich wil wapenen tegen phishing of een groot bedrijf dat een robuuste cybersecurityinfrastructuur nodig heeft, wij zijn er om je te helpen.</p>
-        <p>Dus, ben je klaar om de veiligheid van jouw bedrijf naar een hoger niveau te tillen? Sluit je aan bij de vele tevreden klanten die al vertrouwen op Sekwoeritie en laat ons jouw partner zijn in de strijd tegen cyberdreigingen. Samen bouwen we aan een veiligere en sterkere digitale toekomst!</p>
+        <p>In de snel evoluerende digitale wereld is cybersecurity meer dan ooit een cruciale factor voor het succes en
+          de veiligheid van bedrijven. Bij Sekwoeritie begrijpen we deze uitdagingen als geen ander. Als jouw toegewijde
+          partner in phishingpreventie en securityoplossingen staan we klaar om jouw bedrijf te beschermen tegen de
+          groeiende dreigingen van cybercriminaliteit.</p>
+        <p>Met ons team van ervaren experts bieden we een uitgebreid scala aan diensten, variërend van geavanceerde
+          phishing-detectie tot proactieve securitystrategieën en uitgebreide gebruikerstrainingen. Onze missie is
+          simpel maar krachtig: het creëren van een veiligere digitale omgeving waarin jouw bedrijf kan gedijen zonder
+          zich zorgen te hoeven maken over cyberaanvallen.</p>
+        <p>Bij Sekwoeritie geloven we in een persoonlijke aanpak. We luisteren naar jouw specifieke behoeften en bieden
+          op maat gemaakte oplossingen die aansluiten bij de unieke uitdagingen van jouw organisatie. Of je nu een klein
+          bedrijf bent dat zich wil wapenen tegen phishing of een groot bedrijf dat een robuuste
+          cybersecurityinfrastructuur nodig heeft, wij zijn er om je te helpen.</p>
+        <p>Dus, ben je klaar om de veiligheid van jouw bedrijf naar een hoger niveau te tillen? Sluit je aan bij de vele
+          tevreden klanten die al vertrouwen op Sekwoeritie en laat ons jouw partner zijn in de strijd tegen
+          cyberdreigingen. Samen bouwen we aan een veiligere en sterkere digitale toekomst!</p>
       </article>
 
     </section>
@@ -118,11 +145,20 @@
       <article class="col-md-6">
         <h2>CEO of Sekwoeritie</h2>
         <blockquote class="blockquote text-center">
-          <p class="mb-0">Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.</p>
+          <p class="mb-0">Treat your password like your toothbrush. Don't let anybody else use it, and get a new one
+            every six months.</p>
         </blockquote>
-        <p>Op een dag ontvangt Toon een verontrustend bericht van een vriend die beweert dat zijn bedrijf het slachtoffer is geworden van een phishing-aanval. Hij besluit om te helpen en ontdekt al snel dat de aanvallers zeer geraffineerd te werk zijn gegaan, met een overtuigende nepwebsite die bijna identiek is aan de echte bedrijfswebsite.</p>
-        <p>Met zijn expertise in cybersecurity slaagt Toon erin om de aanval te analyseren en de zwakke plekken in de beveiliging van het bedrijf te identificeren. Hij werkt samen met het IT-team van het bedrijf om de aanval te neutraliseren en maatregelen te treffen om toekomstige phishing-aanvallen te voorkomen.</p>
-        <p>Als gevolg van zijn inspanningen krijgt Toon veel erkenning en respect van zowel het bedrijf als de bredere cybersecurity-gemeenschap. Hij blijft zich inzetten voor het beschermen van anderen tegen phishing en andere cyberdreigingen, met de hoop dat zijn werk uiteindelijk bijdraagt aan een veiligere digitale wereld voor iedereen.</p>
+        <p>Op een dag ontvangt Toon een verontrustend bericht van een vriend die beweert dat zijn bedrijf het
+          slachtoffer is geworden van een phishing-aanval. Hij besluit om te helpen en ontdekt al snel dat de aanvallers
+          zeer geraffineerd te werk zijn gegaan, met een overtuigende nepwebsite die bijna identiek is aan de echte
+          bedrijfswebsite.</p>
+        <p>Met zijn expertise in cybersecurity slaagt Toon erin om de aanval te analyseren en de zwakke plekken in de
+          beveiliging van het bedrijf te identificeren. Hij werkt samen met het IT-team van het bedrijf om de aanval te
+          neutraliseren en maatregelen te treffen om toekomstige phishing-aanvallen te voorkomen.</p>
+        <p>Als gevolg van zijn inspanningen krijgt Toon veel erkenning en respect van zowel het bedrijf als de bredere
+          cybersecurity-gemeenschap. Hij blijft zich inzetten voor het beschermen van anderen tegen phishing en andere
+          cyberdreigingen, met de hoop dat zijn werk uiteindelijk bijdraagt aan een veiligere digitale wereld voor
+          iedereen.</p>
       </article>
       <figure class="col-md-5 offset-md-1 mt-auto">
         <img src="./assets/sekwoeritie_toon.png" alt="foto van Toon Swartenbroekx" class="img-fluid" />
@@ -130,11 +166,14 @@
     </section>
   </main>
 
-  <footer class="container" >
+  <footer class="container">
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">© 2024 Sekwoeritie, Inc</p>
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <p class="col-md-4 mb-0 text-muted">©Swartenbroekx Toon AP Webtechnologie 2024</p>
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
       </a>
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
@@ -143,13 +182,20 @@
       </ul>
     </section>
   </footer>
- 
 
 
-     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

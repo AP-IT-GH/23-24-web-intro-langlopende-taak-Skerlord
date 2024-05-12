@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head> 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <!-- stylesheet eigen geschreven css -->
-    <link href="./css/style.css" rel="stylesheet">
-    <!-- stylesheet reset css -->
-    <link href="./css/reset.css" rel="stylesheet">
 
-    <!-- LEAFLET -->
-    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin="" defer/>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- JavaScript: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <!-- stylesheet eigen geschreven css -->
+  <link href="./css/style.css" rel="stylesheet">
+  <!-- stylesheet reset css -->
+  <link href="./css/reset.css" rel="stylesheet">
+  <!-- svg icon as Favicon in browser! :) -->
+  <link rel="icon" href="./assets/Sekwoerity.svg">
+  <!-- LEAFLET -->
+  <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" defer />
 
-    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin="" defer></script>
+  <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
 
-    <script src="./js/mapcontact.js" defer></script>
+  <script src="./js/mapcontact.js" defer></script>
 
-    <!-- Titel van de website! -->
-    <title>Sekwoeritie</title>
+  <!-- Titel van de website! -->
+  <title>Sekwoeritie</title>
 
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+  <nav class="navbar navbar-expand-md custom-primary navbar-dark">
     <section class="container-md">
-    <!-- Logo toevoegen + alt-text invullen -->
-    <a class="navbar-brand mr-auto" href="./index.html">
-    <img class="d-inline-block align-middle" src="./assets/Sekwoerity.svg" width="35" height="35" alt="Logo Sekwoeritie">
-    </a> 
-    <!-- Wanneer breakpoint wordt getriggerd -> maak burger menu. -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Logo toevoegen + alt-text invullen -->
+      <a class="navbar-brand mr-auto" href="./index.html">
+        <img class="d-inline-block align-middle" src="./assets/Sekwoerity.svg" width="35" height="35"
+          alt="Logo Sekwoeritie">
+      </a>
+      <!-- Wanneer breakpoint wordt getriggerd -> maak burger menu. -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <container class="collapse navbar-collapse" id="navbarSupportedContent">
-    <!-- Unordered list -->
-    <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Diensten
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="./diensten.html">Diensten</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="./antivirus.html">Antivirus</a>
-            <a class="dropdown-item" href="./domeinmonitoring.html">Domeinmonitoring</a>
-            <a class="dropdown-item" href="./emailfiltering.html">E-mailfiltering</a>
-            <a class="dropdown-item" href="./mfa.html">Multifactor Authenticatie</a>
-            <a class="dropdown-item" href="./phishingsimulatie.html">Phishingsimulatie</a>
-            <a class="dropdown-item" href="./webbrowsers.html">Webbrowsers</a>
-            
-          </div>
-        </li>
+      <container class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Unordered list -->
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Diensten
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./diensten.html">Diensten</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="./antivirus.html">Antivirus</a>
+              <a class="dropdown-item" href="./domeinmonitoring.html">Domeinmonitoring</a>
+              <a class="dropdown-item" href="./emailfiltering.html">E-mailfiltering</a>
+              <a class="dropdown-item" href="./mfa.html">Multifactor Authenticatie</a>
+              <a class="dropdown-item" href="./phishingsimulatie.html">Phishingsimulatie</a>
+              <a class="dropdown-item" href="./webbrowsers.html">Webbrowsers</a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="./contact.html">Contact</a>
-        </li>
-    </ul>
-    <ul class="navbar-nav d-flex flex-row ms-auto">
-      <!-- Icons -->
-      <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="https://facebook.com">
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex flex-row ms-auto">
+          <!-- Icons -->
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://facebook.com" target="_blank">
               <i class="bi bi-facebook text-white"></i>
-          </a>
-      </li>
-      <li class="nav-item me-3 me-lg-0">
-          <a class="nav-link" href="https://twitter.com">
+            </a>
+          </li>
+          <li class="nav-item me-3 me-lg-0">
+            <a class="nav-link" href="https://twitter.com" target="_blank">
               <i class="bi bi-twitter text-white"></i>
-          </a>
-      </li>
-    </container>
+            </a>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm custom-secondary" type="submit">zoeken</button>
+          </form>
+      </container>
     </section>
   </nav>
 
@@ -92,89 +101,85 @@
     <h1 class="display-4 fw-bold lh-1">Contact</h1>
   </header>
 
-    <main class="container my-5">
-      <section class="row">
+  <main class="container my-5">
+    <section class="row">
       <form class="col-md-6">
         <ul>
-        <p>
-          We staan altijd klaar om je te helpen! Vul het onderstaande contactformulier in en we nemen zo snel mogelijk contact met je op. Jouw vragen en opmerkingen zijn belangrijk voor ons. Of het nu gaat om een specifieke dienst, een offerteaanvraag of gewoon een algemene vraag over cybersecurity, wij zijn hier om je te ondersteunen.
-        </p>
-        <!-- Vraag achter naam -->
-        <li data-mdb-input-init class="form-outline">
-          <label class="form-label" for="form4Example1">Naam</label>
-          <input type="text" id="form4Example1" class="form-control" />
-        </li>
-      
-        <!-- Vraag achter email -->
-        <li data-mdb-input-init class="form-outline">
-          <label class="form-label" for="form4Example2">E-mail adres</label>
-          <input type="email" id="form4Example2" class="form-control" /> 
-        </li>
+          <p>
+            We staan altijd klaar om je te helpen! Vul het onderstaande contactformulier in en we nemen zo snel mogelijk
+            contact met je op. Jouw vragen en opmerkingen zijn belangrijk voor ons. Of het nu gaat om een specifieke
+            dienst, een offerteaanvraag of gewoon een algemene vraag over cybersecurity, wij zijn hier om je te
+            ondersteunen.
+          </p>
+          <!-- Vraag achter naam -->
+          <li data-mdb-input-init class="form-outline">
+            <label class="form-label" for="form4Example1">Naam</label>
+            <input type="text" id="form4Example1" class="form-control" />
+          </li>
 
-        <!-- Geef een dropdown menu met opties-->
-        <li class="form-group">
-          <label for="inputjob">Ik ben</label>
+          <!-- Vraag achter email -->
+          <li data-mdb-input-init class="form-outline">
+            <label class="form-label" for="form4Example2">E-mail adres</label>
+            <input type="email" id="form4Example2" class="form-control" />
+          </li>
+
+          <!-- Geef een dropdown menu met opties-->
+          <li class="form-group">
+            <label for="inputjob">Ik wil mijn boodschap richten aan de</label>
             <select id="inputjob" class="form-control">
-              <option selected>student</option>
-              <option>digibeet</option>
-              <option>professional</option>
-              <option>leerkracht</option>
-              <option>god</option>
-            </select>  
-        </li>
-        <!-- Bericht? -->
-        <li data-mdb-input-init class="form-outline">
-          <label class="form-label" for="form4Example3">Bericht</label>
-          <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-        </li>
-      
-        <!-- Checkbox -->
-        <li class="form-check d-flex justify-content-center mb-4">
-          <input
-            class="form-check-input me-2"
-            type="checkbox"
-            value=""
-            id="form4Example4"
-            checked
-          />
-          <label class="form-check-label" for="form4Example4">
-            Stuur me een kopie van dit bericht.
-          </label>
-        </li>
-      
-        <!-- Submit button -->
-        <li class="d-flex justify-content-center">
-          <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Verstuur</button>
-        </li>
+              <option>Administrator</option>
+              <option>Webdesigner</option>
+            </select>
+          </li>
+          <!-- Bericht? -->
+          <li data-mdb-input-init class="form-outline">
+            <label class="form-label" for="form4Example3">Bericht</label>
+            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+          </li>
+
+          <!-- Submit button -->
+          <li class="d-flex justify-content-center mt-2">
+            <button data-mdb-ripple-init type="button"
+              class="btn custom-button-primary mb-4 link-light"><strong>Verstuur</strong></button>
+          </li>
         </ul>
       </form>
       <container id="map" class="col-md-6">
         <!-- in de apMap zal er via Leaflet een map ingeladen worden -->
         <div id="mapcontact" class=""></div>
-      </container >
-      </section>
+      </container>
+    </section>
 
 
- 
 
-    </main>
-    <footer class="container" >
-        <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <p class="col-md-4 mb-0 text-muted">© 2024 Sekwoeritie, Inc</p>
-          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <ul class="nav col-md-4 justify-content-end">
-            <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="./diensten.html" class="nav-link px-2 text-muted">Diensten</a></li>
-            <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-muted">Contact</a></li>
-          </ul>
-        </section>
-      </footer>
-           <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  </main>
+  <footer class="container">
+    <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">©Swartenbroekx Toon AP Webtechnologie 2024</p>
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="./diensten.html" class="nav-link px-2 text-muted">Diensten</a></li>
+        <li class="nav-item"><a href="./contact.html" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+    </section>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
 </body>
