@@ -15,7 +15,18 @@
     <!-- stylesheet reset css -->
     <link href="./css/reset.css" rel="stylesheet">
 
-    <script src="./scripting/phishedstats.js" defer></script>
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" defer/>
+
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="" defer></script>
+
+    <script src="./js/mapmfa.js" defer></script>
     <!-- Titel van de website! -->
     <title>Sekwoeritie</title>
 
@@ -75,9 +86,94 @@
     </container>
     </section>
   </nav>
-  <main class="container">
 
-  </main>
+  <header class="container mt-4">
+    <h1 class="display-4 fw-bold lh-1">Multifactor Authenticatie</h1>
+  </header>
+
+
+
+  <div class="container my-3 my-md-5">
+    <div class="row">
+    <main class="col-md-9">
+      <h2>
+        Versterking van de Toegangscontrole met MFA
+    </h2>
+    <p>
+      Multi-Factor Authentication (MFA) is een krachtige beveiligingsmaatregel die de toegangscontrole tot systemen en gegevens versterkt door gebruikers te vereisen meer dan één vorm van authenticatie te verstrekken voordat ze kunnen inloggen. Typisch omvat MFA iets dat de gebruiker weet (zoals een wachtwoord), iets dat ze hebben (zoals een mobiel apparaat of een fysieke sleutel) en/of iets dat ze zijn (zoals een biometrisch kenmerk). Deze gelaagde benadering maakt het moeilijker voor aanvallers om ongeautoriseerde toegang te verkrijgen, zelfs als ze het wachtwoord van een gebruiker hebben verkregen.
+    </p>
+    <container class="row">
+    <article class="col-md-6">
+    <h2>
+      Whitelisting op Basis van IP-adressen
+    </h2>
+    <p>
+      Een belangrijk aspect van MFA is whitelisting op basis van IP-adressen, wat extra bescherming biedt door alleen toegang toe te staan vanaf vertrouwde netwerken of locaties. Door specifieke IP-adressen te whitelisten, kunnen organisaties de toegang tot hun systemen beperken tot alleen die locaties die als veilig worden beschouwd. Dit kan bijvoorbeeld betekenen dat gebruikers alleen kunnen inloggen vanaf het interne netwerk van een bedrijf of vanaf specifieke externe locaties die zijn goedgekeurd door de IT-afdeling.  </p>
+    <h2>
+      Belang van MFA en IP-Whitelisting
+    </h2>
+    <p>
+      Het implementeren van MFA, inclusief whitelisting op basis van IP, is van cruciaal belang voor het beschermen van gevoelige gegevens en het voorkomen van ongeautoriseerde toegang. Door meerdere lagen van authenticatie te vereisen en toegang te beperken tot vertrouwde IP-adressen, kunnen organisaties de beveiliging van hun systemen versterken en het risico op datalekken en inbreuken verminderen.
+    </p>
+    </article>
+    <container id="mapmfa" class="col-md-4 offset-md-1 mr-auto my-auto">
+      <!-- in de apMap zal er via Leaflet een map ingeladen worden -->
+      <div id="mapcontact" class=""></div>
+    </container>
+    </container>
+    </main>
+    <aside class="col-md-3 border-start">
+        <h2 class="text-uppercase">Diensten</h2>
+        <ol class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-action">
+            <a class="link-dark link-offset-2 link-underline link-underline-opacity-0" href="./antivirus.html">
+              Antivirus
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./domeinmonitoring.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Domeinmonitoring
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./emailfiltering.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              E-mailfiltering
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./mfa.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Multifactor Authenticatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./phishingsimulatie.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Phishingsimulatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./webbrowsers.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Webbrowsers
+            </a>
+          </li>
+        </ol>
+        <hr>
+        <h2 class="text-uppercase">SOCIALS</h2>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+    </aside>
+    </div>
+    </div>
+
   <footer class="container" >
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
       <p class="col-md-4 mb-0 text-muted">© 2024 Sekwoeritie, Inc</p>

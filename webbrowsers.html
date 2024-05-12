@@ -15,6 +15,18 @@
     <!-- stylesheet reset css -->
     <link href="./css/reset.css" rel="stylesheet">
 
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="" defer/>
+
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="" defer></script>
+
+    <script src="./js/mapwebbrowser.js" defer></script>
     <!-- Titel van de website! -->
     <title>Sekwoeritie</title>
 
@@ -74,6 +86,207 @@
     </container>
     </section>
   </nav>
+
+  <header class="container mt-4">
+    <h1 class="display-4 fw-bold lh-1">Webbrowsers</h1>
+  </header>
+
+
+
+  <div class="container my-3 my-md-5">
+    <div class="row">
+    <main class="col-md-9">
+    <h2>
+        Van eenvoudige paginaweergave tot complexe ecosystemen
+    </h2>
+    <p>
+      Webbrowsers zijn geëvolueerd van eenvoudige tools voor het bekijken van webpagina's tot uitgebreide ecosystemen die een breed scala aan functies bieden. Vroeger waren webbrowsers simpelweg bedoeld om HTML-pagina's weer te geven, maar tegenwoordig zijn ze veel krachtiger geworden, met ondersteuning voor complexe webapplicaties, multimedia-inhoud, extensies en meer. De concurrentie tussen webbrowserontwikkelaars heeft geleid tot innovaties op het gebied van snelheid, beveiliging, privacy en gebruikerservaring, waardoor gebruikers een ruime keuze hebben tussen verschillende browsers die aan hun specifieke behoeften voldoen.
+    </p>
+    <table class="table d-none d-lg-block table-sm table-bordered">
+      <caption>Lijst van browsers die je kan gebruiken</caption>
+      <thead class="table-primary">
+        <tr>
+          <th><strong>Scoort beste in categorie</strong></th>
+          <th><strong>Browser</strong></th>
+          <th><strong>Beschikbaarheid</strong></th>
+          <th><strong>Beste functies</strong></th>
+          <th><strong>Downloads</strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Algemeen</strong></td>
+          <td>Google Chrome</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Mobiel</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Ondersteunt Google-services</li>
+              <li>Presteert beter dan de concurrentie</li>
+            </ul>
+          </td>
+          <td>
+            <a class="button" href="https://www.google.com/chrome/" target="_blank" rel="noopener">Google Chrome</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Veiligheid</strong></td>
+          <td>Mozilla Firefox</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Mobiel</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Voorkomt tracking</li>
+              <li>Blokkeert cryptominers</li>
+            </ul>
+          </td>
+          <td>
+            <a class="button" href="https://www.mozilla.org/nl/firefox/new/" target="_blank" rel="noopener">Mozilla Firefox</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Modificeerbaar</strong></td>
+          <td>Vivaldi</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Android</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Biedt uitgebreide aanpassingsmogelijkheden</li>
+              <li>Beschermt tegen phishing</li>
+            </ul>
+          </td>
+          <td>
+            <a class="button" href="https://vivaldi.com/nl/download/" target="_blank" rel="noopener">Vivaldi</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Sociale media</strong></td>
+          <td>Opera</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Mobiel</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Bevat een ingebouwde VPN</li>
+              <li>Biedt ingebouwde sociale apps</li>
+            </ul>
+          </td>
+          <td>
+            <a class="button" href="https://www.opera.com/nl/download" target="_blank" rel="noopener">Opera</a>
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Apple devices</strong></td>
+          <td>Apple Safari</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Mobiel</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Ondersteunt extensies</li>
+              <li>Biedt de beste snelheden</li>
+            </ul>
+          </td>
+          <td><strong>Inbegrepen op Apple-apparaten</strong></td>
+        </tr>
+        <tr>
+          <td><strong>Windows OS</strong></td>
+          <td>Microsoft Edge</td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Desktop</li>
+              <li>Mobiel</li>
+            </ul>
+          </td>
+          <td>
+            <ul class="p-0 m-0">
+              <li>Installeert web-apps</li>
+              <li>Concurreert met Chrome in snelheid</li>
+            </ul>
+          </td>
+          <td>
+            <a class="button" href="https://www.microsoft.com/nl-nl/edge" target="_blank" rel="noopener">Microsoft Edge</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="lead">Klik/duw op de icoontjes om de 5de populaire browser te zien / werelddeel.</p>
+    <container id="map" class="">
+      <!-- in de apMap zal er via Leaflet een map ingeladen worden -->
+      <div id="mapwebbrowser" class=""></div>
+    </container>
+
+    
+    </main>
+    <aside class="col-md-3 border-start">
+        <h2 class="text-uppercase">Diensten</h2>
+        <ol class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-action">
+            <a class="link-dark link-offset-2 link-underline link-underline-opacity-0" href="./antivirus.html">
+              Antivirus
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./domeinmonitoring.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Domeinmonitoring
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./emailfiltering.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              E-mailfiltering
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./mfa.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Multifactor Authenticatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./phishingsimulatie.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Phishingsimulatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./webbrowsers.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Webbrowsers
+            </a>
+          </li>
+        </ol>
+        <hr>
+        <h2 class="text-uppercase">SOCIALS</h2>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+    </aside>
+    </div>
+    </div>
 
   <footer class="container" >
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">

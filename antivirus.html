@@ -15,6 +15,9 @@
     <!-- stylesheet reset css -->
     <link href="./css/reset.css" rel="stylesheet">
 
+    <script src="./js/dashboard.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+
     <!-- Titel van de website! -->
     <title>Sekwoeritie</title>
 
@@ -74,6 +77,96 @@
     </container>
     </section>
   </nav>
+
+  <header class="container mt-4">
+    <h1 class="display-4 fw-bold lh-1">Antivirus</h1>
+  </header>
+
+  <div class="container my-3 my-md-5">
+    <div class="row">
+    <main class="col-md-9">
+      <article>
+      <h2>
+        Wat is antivirussoftware?
+    </h2>
+    <p>
+      Antivirussoftware is een programma dat is ontworpen om te detecteren, te voorkomen en te verwijderen van schadelijke software op computers en andere apparaten. Het werkt door te scannen op bekende patronen van kwaadaardige code, verdachte activiteiten en andere indicatoren van compromis.
+    </p>
+    </article>
+    <article>
+      <h2>
+        Hoe werkt antivirussoftware?
+    </h2>
+    <p>
+      Antivirussoftware maakt gebruik van verschillende technieken om kwaadaardige software te identificeren en te neutraliseren. Dit kan onder meer het scannen van bestanden, mappen en applicaties op een apparaat om verdachte patronen te detecteren, het monitoren van het gedrag van programma's om afwijkende activiteiten te identificeren, en het blokkeren van bekende schadelijke websites en downloads.
+    </p>
+    </article>
+    <article>
+      <h2>
+        CVE's: Wat zijn ze en waarom zijn ze belangrijk?
+    </h2>
+    <p>
+      CVE staat voor "Common Vulnerabilities and Exposures" en verwijst naar bekende kwetsbaarheden in software, besturingssystemen en andere technologische systemen. Deze kwetsbaarheden kunnen worden misbruikt door kwaadwillende actoren om toegang te krijgen tot systemen, gegevens te stelen of andere schadelijke activiteiten uit te voeren.
+    </p>
+    <p>
+      Het is essentieel voor antivirussoftware om op de hoogte te zijn van CVE's en de bijbehorende patches en updates om ervoor te zorgen dat systemen worden beschermd tegen bekende kwetsbaarheden. Door regelmatig updates uit te voeren en patches toe te passen, kunnen gebruikers ervoor zorgen dat hun antivirussoftware effectief blijft in het detecteren en neutraliseren van bedreigingen.
+    </p>
+    </article>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+    </main>
+    <aside class="col-md-3 border-start">
+        <h2 class="text-uppercase">Diensten</h2>
+        <ol class="list-group list-group-flush">
+          <li class="list-group-item list-group-item-action">
+            <a class="link-dark link-offset-2 link-underline link-underline-opacity-0" href="./antivirus.html">
+              Antivirus
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./domeinmonitoring.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Domeinmonitoring
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./emailfiltering.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              E-mailfiltering
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./mfa.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Multifactor Authenticatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./phishingsimulatie.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Phishingsimulatie
+            </a>
+          </li>
+          <li class="list-group-item list-group-item-action">
+            <a href="./webbrowsers.html" class="link-dark link-offset-2 link-underline link-underline-opacity-0">
+              Webbrowsers
+            </a>
+          </li>
+        </ol>
+        <hr>
+        <h2 class="text-uppercase">SOCIALS</h2>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+    </aside>
+    </div>
+    </div>
 
   <footer class="container" >
     <section class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
